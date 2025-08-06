@@ -1,100 +1,129 @@
-# 😊 Face Emotion Detection using CNN & OpenCV
+# 📄 Resume Analyzer – AI-Based Resume Matcher
 
-This project is a deep learning-based **Face Emotion Detection** system built using **Convolutional Neural Networks (CNN)** and **OpenCV**. It detects real-time facial emotions such as Happy, Sad, Angry, Surprise, Neutral, etc., using your webcam.
-
----
-
-## 📌 Features
-
-- Detects human faces in real-time via webcam.
-- Classifies facial emotions (e.g., Happy, Sad, Angry, Surprise, Neutral).
-- Built with Python, OpenCV, TensorFlow/Keras.
-- Lightweight and works on CPU.
-- Easy-to-use interface with live webcam feed.
+A smart and interactive web application that helps **match resumes with job descriptions** using AI-powered keyword extraction and similarity scoring. Built using **Python**, **Streamlit**, **spaCy**, and **PyPDF2**.
 
 ---
 
-## 🛠️ Technologies Used
+## 🚀 Key Features
 
-- Python 🐍
-- OpenCV 🎥
-- TensorFlow / Keras 🧠
-- NumPy 📊
-- Pre-trained Haar Cascade for face detection
-
----
-
-## 🚀 How It Works
-
-1. The webcam feed is captured using OpenCV.
-2. The face is detected using Haar Cascade classifier.
-3. The face ROI is preprocessed (resized, grayscaled).
-4. A trained CNN model predicts the emotion.
-5. The emotion is displayed on the video feed in real-time.
+- 📤 Upload **Resume** and **Job Description** in PDF format
+- 🔍 Extracts and cleans text using **PyPDF2** and **spaCy**
+- ✅ Calculates a **matching score** between resume and job description
+- 📊 Displays results in a clean and user-friendly Streamlit interface
+- 💡 Helps recruiters and candidates save time in screening
 
 ---
 
-## 🔧 Installation Steps
+## 🛠️ Tech Stack
 
-1. **Clone the repository**
+- **Frontend**: Streamlit
+- **Backend**: Python
+- **Libraries**: PyPDF2, spaCy, Scikit-learn, NumPy
+- **NLP**: spaCy for keyword extraction and text processing
 
+---
 
-git clone https://github.com/your-username/face-emotion-detector.git
-cd face-emotion-detector
+## 🧠 How It Works
+
+1. **User uploads**:
+   - Resume (PDF)
+   - Job Description (PDF)
+
+2. **Text Extraction**:
+   - PyPDF2 extracts raw text from both files
+
+3. **Keyword Extraction**:
+   - spaCy processes and extracts relevant technical terms, skills, and keywords
+
+4. **Matching Score**:
+   - A simple NLP-based similarity algorithm calculates how well the resume matches the job
+
+5. **Result**:
+   - A match percentage is displayed on the screen
+
+---
+
+## 🖥️ Screenshots
+
+![App Screenshot](images/screenshot.png)
+
+---
+
+## 📦 Installation
+
+1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/resume-analyzer.git
+cd resume-analyzer
+Create virtual environment (optional but recommended)
+
+bash
+Copy
+Edit
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
 Install dependencies
 
-Make sure Python 3 is installed. Then run:
-
-
+bash
+Copy
+Edit
 pip install -r requirements.txt
-Run the application
+Run the app
 
-
-python main.py
-🧠 Model Training (Optional)
-If you want to retrain the model:
-
-Use FER2013 or any labeled emotion dataset.
-
-Train a CNN with emotion labels.
-
-Save the model as model.h5.
-
-📂 Project Structure
-face-emotion-detector/
+bash
+Copy
+Edit
+streamlit run app.py
+📁 Project Structure
+bash
+Copy
+Edit
+resume-analyzer/
 │
-├── main.py                 # Main app with webcam feed
-├── model.h5                # Trained CNN model
-├── haarcascade_frontalface_default.xml
-├── requirements.txt        # Python libraries
-└── README.md               # This file
-📸 Sample Output
+├── app.py                  # Main Streamlit app
+├── utils.py                # Helper functions for processing
+├── model/                  # (Optional) Saved models
+├── uploads/                # Uploaded PDFs
+├── requirements.txt        # Project dependencies
+├── README.md               # This file
+└── images/                 # Screenshots and visuals
+📌 Future Add-ons
+🔍 Add job-role-specific scoring (Data Scientist, Web Developer, etc.)
 
-🔒 Future Add-ons
-🔊 Voice alert when Angry/Sad detected
+🧠 Integrate ML/NLP-based ranking algorithms
 
-🧓 Age & Gender Detection
+🗂 Export analyzed data as a report
 
-📈 Logging emotion data for analysis
+📧 Email result to user
 
-🙋‍♀️ Author
+👩‍💻 Author
 Made with ❤️ by Sandhiya
+🔗 LinkedIn
+
+Sample output:
+
+<img width="918" height="873" alt="Screenshot 2025-06-26 222853" src="https://github.com/user-attachments/assets/a681d5db-04fc-4340-b303-6b527459fe9c" />
+<img width="985" height="801" alt="Screenshot 2025-06-26 222928" src="https://github.com/user-attachments/assets/4dc7d6c6-20ce-47ca-b7ae-88265dd35214" />
+<img width="901" height="860" alt="Screenshot 2025-06-26 222908" src="https://github.com/user-attachments/assets/a904cf77-c00e-47a6-95ec-79dfc6d51c52" />
 
 
 
-📄 License
-This project is open-source and free to use for educational purposes.
 
 
-## ⭐ Support This Project
+📜 License
+This project is open-source and free to use for educational purposes. Licensed under the MIT License.
 
-If you liked this project:
+⭐ Support This Project
+If you found this project useful:
 
-- 🌟 **Star this repository** on GitHub
-- 🤝 **Follow me on [LinkedIn](https://www.linkedin.com/in/sandhiya-v-it-461a262b2?)** for more projects and updates
-- 🗣️ Feel free to connect or reach out for collaboration!
+🌟 Star this repository
 
-Thanks for your support! ❤️
+🤝 Follow me on LinkedIn
+
+🗣 Share with friends or recruiters
+
+Thanks for your support! 💫
 
 
 
