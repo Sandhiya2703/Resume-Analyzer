@@ -1,0 +1,13 @@
+python
+machine learning
+deep learning
+tensorflow
+keras
+numpy
+pandas
+data visualization
+statistics
+big data
+cloud computing
+SQL
+R

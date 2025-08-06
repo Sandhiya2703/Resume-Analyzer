@@ -1,0 +1,14 @@
+linux
+shell scripting
+docker
+kubernetes
+ci/cd
+jenkins
+aws
+azure
+terraform
+ansible
+monitoring
+devops pipeline
+cloud computing
+gitlab

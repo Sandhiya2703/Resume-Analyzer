@@ -1,0 +1,13 @@
+python
+machine learning
+data analysis
+statistics
+pandas
+numpy
+scikit-learn
+matplotlib
+tensorflow
+deep learning
+sql
+data visualization
+data preprocessing

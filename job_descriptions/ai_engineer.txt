@@ -1,0 +1,12 @@
+python
+tensorflow
+pytorch
+deep learning
+neural networks
+opencv
+nlp
+computer vision
+reinforcement learning
+keras
+machine learning
+data engineering

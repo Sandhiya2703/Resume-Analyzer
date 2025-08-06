@@ -1,0 +1,15 @@
+html
+css
+javascript
+react
+node.js
+express
+mongodb
+sql
+rest api
+git
+devops
+docker
+backend development
+frontend development
+authentication
